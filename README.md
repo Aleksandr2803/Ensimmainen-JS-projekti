@@ -1,2 +1,1 @@
 # Ensimmainen-JS-projekti
-Tervetuloa

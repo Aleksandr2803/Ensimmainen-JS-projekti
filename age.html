@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <script>
+        function validate(){
+            var age=parseInt(prompt("Enter age"));
+            var ans="not eigible";
+						var ans1="Voit ajaa polkupyörää";
+						var ans2="Voit ajaa mopoa";
+						var ans3="Voit ajaa autoa";
+
+            if(age>=18){
+                ans3="Voit ajaa autoa";
+            }
+						if else(age<=15) {
+								ans1="Voit ajaa polkupyörää";
+						else(age<18>15) {
+								ans2="Voit ajaa mopoa";
+						}
+						}
+            return(ans);
+        }
+    </script>
+</head>
+<body>
+    <script>
+        var status=validate();
+        document.write("You are <b>"+status+"</b> for driving a car");
+    </script>
+</body>
+</html>

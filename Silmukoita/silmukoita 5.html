@@ -1,0 +1,49 @@
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <h1>Tehtävä 5</h1>
+         <p>Ohjelma, joka tulostaa näytölle luvut 1-100, kuitenkin
+         siten, että jos luku on 3:lla jaollinen, tulostetaan hip ja
+       viidellä jaollinen tulostetaan heijaa ja jos sekä viidellä että kolmella
+     jaollinen, tulostetaan hipheijaa </p>
+       <button type="button" id="button" onclick="hipHeijaa()">Tulosta</button>
+       <div id="tulostaLuku"></div>
+
+
+       <script type="text/javascript">
+
+
+    function hipHeijaa()
+    {
+      var printt = '';
+      for(var y = 1; y <= 100; y++)
+      {
+        if(y%3==0 && y%5==0)
+        {
+          printt+='Hip Heijaa ';
+        }
+        else if(y%5 == 0)
+        {
+          printt+='Heijaa ';
+        }
+        else if(y%3 == 0)
+        {
+          printt+='Hip ';
+        }
+        else {
+          printt+=y+' ';
+        }
+        document.getElementById('tulostaLuku').innerHTML = printt;
+      }
+    }
+
+
+
+  </script>
+  </body>
+</html>

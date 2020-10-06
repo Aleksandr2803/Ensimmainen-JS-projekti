@@ -1,0 +1,31 @@
+/<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Tehtävä 1</h1>
+    <form class="" action="index.html" method="post">
+  <p>Anna parillinen luku: <input type="text" id="parillinenluku" value=""></p>
+  <button type="button" name="button" onclick="tulostaParilliset()">Tulosta parilliset</button>
+  <div id="parilliset"></div>
+  </form>
+  <script type="text/javascript">
+
+
+  function tulostaParilliset()
+{
+  var k = parseInt(document.getElementById('parillinenluku').value);
+  var j = "<p>";
+  for(var i = 2; i <= k; i= i+2)
+  {
+    j+=i;
+    j+=" ";
+  }
+  j+="</p>";
+    document.getElementById('parilliset').innerHTML = j;
+}
+  </script>
+  </body>
+</html>
